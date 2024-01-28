@@ -17,6 +17,6 @@ That should open http://localhost:1337/ on the browser
 ### Documentation
 
 - https://pota.quack.uy/
-- https://github.com/potaorg/pota
-- https://github.com/potaorg/templates
+- https://github.com/potahtml/pota
+- https://github.com/potahtml/templates
 - https://www.npmjs.com/package/pota
