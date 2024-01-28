@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0D1117" />
+    <title>pota App</title>
+  </head>
+  <body>
+    <noscript>The app requires JavaScript to be enabled</noscript>
+    <script type="module">
+      // pota + solid reactivity - Compiler-less html example
+
+      import {
+        render,
+        signal,
+        html,
+        memo,
+      } from "https://cdn.jsdelivr.net/npm/pota@0.7.77/dist/standalone.js";
+
+      function Counter() {
+        const [count, setCount] = signal(1);
+        const double = memo(() => count() * 2);
+
+        const increment = () => setCount((count) => count + 1);
+
+        html.define({ count, double });
+
+        return html`<label>
+          <button name="button" onClick="${increment}">
+            <count />
+          </button>
+          double is: <double />
+        </label>`;
+      }
+
+      render(Counter);
+    </script>
+  </body>
+</html>
