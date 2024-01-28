@@ -12,7 +12,7 @@ Run a development version using
 
 `npm run dev`
 
-That should open http://localhost:1337/ on the browser
+That should open http://localhost:1339/ on the browser
 
 ### Documentation
 
