@@ -1,0 +1,35 @@
+{
+	"name": "pota-template-js",
+	"description": "",
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "rollup -c -w",
+		"build": "rollup -c",
+		"serve": "node ./server.js"
+	},
+	"devDependencies": {
+		"@rollup/plugin-babel": "^6.0.4",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"@rollup/plugin-terser": "^0.4.4",
+		"express": "^4.18.2",
+		"rollup": "^4.9.6"
+	},
+	"dependencies": {
+		"pota": "^0.7.79"
+	},
+	"prettier": {
+		"printWidth": 70,
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": true,
+		"quoteProps": "as-needed",
+		"jsxSingleQuote": false,
+		"trailingComma": "all",
+		"bracketSpacing": true,
+		"bracketSameLine": false,
+		"arrowParens": "avoid",
+		"proseWrap": "never",
+		"endOfLine": "lf"
+	}
+}
