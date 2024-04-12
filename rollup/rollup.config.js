@@ -11,8 +11,7 @@ const plugins = [
   resolve({}),
   babel({
     babelHelpers: 'bundled',
-    // may change lib to solid, oby, flimsy
-    presets: [['pota/babel-preset', { lib: 'solid' }]],
+    presets: [['pota/babel-preset']],
   }),
   terser(),
 ]

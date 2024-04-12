@@ -9,8 +9,10 @@
   <body>
     <noscript>The app requires JavaScript to be enabled</noscript>
     <script type="module">
-      // pota + solid reactivity - Compiler-less html example
-
+      /**
+        Compiler-less html example. `standalone` includes everything, you probably want
+        to import from the depths of the lib instead.
+       */
       import {
         render,
         signal,
@@ -19,10 +21,10 @@
       } from "https://cdn.jsdelivr.net/npm/pota/dist/standalone.js";
 
       function Counter() {
-        const [count, setCount] = signal(1);
+        const [count, setCount, updateCount] = signal(1);
         const double = memo(() => count() * 2);
 
-        const increment = () => setCount((count) => count + 1);
+        const increment = () => updateCount((count) => count + 1);
 
         html.define({ count, double });
 

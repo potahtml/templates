@@ -1,35 +1,35 @@
 {
-  "name": "pota-template-ts",
-  "description": "",
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "dev-share": "vite --host",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "devDependencies": {
-    "typescript": "^5.3.3",
-    "vite": "^4.5.2",
-    "vite-plugin-babel": "^1.2.0"
-  },
-  "dependencies": {
-    "pota": "^0.9.96"
-  },
-  "prettier": {
-    "printWidth": 70,
-    "useTabs": true,
-    "semi": false,
-    "singleQuote": true,
-    "quoteProps": "as-needed",
-    "jsxSingleQuote": false,
-    "trailingComma": "all",
-    "bracketSpacing": true,
-    "bracketSameLine": false,
-    "arrowParens": "avoid",
-    "proseWrap": "never",
-    "endOfLine": "lf"
-  }
+	"name": "pota-template-ts",
+	"description": "",
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"start": "vite",
+		"dev": "vite",
+		"dev-share": "vite --host",
+		"build": "vite build",
+		"serve": "vite preview"
+	},
+	"devDependencies": {
+		"typescript": "^5.3.3",
+		"vite": "^4.5.2",
+		"vite-plugin-babel": "^1.2.0"
+	},
+	"dependencies": {
+		"pota": "^0.13.118"
+	},
+	"prettier": {
+		"printWidth": 70,
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": true,
+		"quoteProps": "as-needed",
+		"jsxSingleQuote": false,
+		"trailingComma": "all",
+		"bracketSpacing": true,
+		"bracketSameLine": false,
+		"arrowParens": "avoid",
+		"proseWrap": "never",
+		"endOfLine": "lf"
+	}
 }

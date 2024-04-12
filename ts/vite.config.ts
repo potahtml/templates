@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [
     babel({
       babelConfig: {
-        presets: [['pota/babel-preset', { lib: 'solid' }]],
+        presets: [['pota/babel-preset']],
       },
     }),
   ],
