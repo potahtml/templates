@@ -1,7 +1,7 @@
 {
 	"name": "pota-template-ts",
 	"description": "",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
 		"start": "vite",
@@ -16,7 +16,7 @@
 		"vite-plugin-babel": "^1.2.0"
 	},
 	"dependencies": {
-		"pota": "^0.13.118"
+		"pota": "^0.14.133"
 	},
 	"prettier": {
 		"printWidth": 70,

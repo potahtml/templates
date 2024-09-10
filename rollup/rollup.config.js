@@ -2,27 +2,21 @@ import babel from '@rollup/plugin-babel'
 import resolve from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
 
-const outputOptions = {
-  format: 'es',
-  sourcemap: false,
-}
-
-const plugins = [
-  resolve({}),
-  babel({
-    babelHelpers: 'bundled',
-    presets: [['pota/babel-preset']],
-  }),
-  terser(),
-]
-
 export default [
   {
     input: './src/index.jsx',
-    plugins,
+    plugins: [
+      resolve({}),
+      babel({
+        babelHelpers: 'bundled',
+        presets: [['pota/babel-preset']],
+      }),
+      terser(),
+    ],
     output: [
       {
-        ...outputOptions,
+        format: 'es',
+        sourcemap: true,
         file: './dist/index.js',
       },
     ],

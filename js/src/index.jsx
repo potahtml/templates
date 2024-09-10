@@ -1,8 +1,8 @@
-import { render, signal, memo } from 'pota'
-import { Route } from 'pota/router'
+import { memo, render, signal } from 'pota'
+import { Router } from 'pota/web'
 
-import styles from './index.module.css'
 import logo from './assets/logo.svg'
+import styles from './index.module.css'
 
 function App() {
   return (
@@ -46,11 +46,11 @@ function Menu() {
 }
 function Routing() {
   return (
-    <Route path="/">
-      <Route>Home!</Route>
-      <Route.Default>404 Not Found!</Route.Default>
-      <Route path="moon">Buttiful</Route>
-      <Route path="rick" collapse={true}>
+    <Router path="/">
+      <Router>Home!</Router>
+      <Router.Default>404 Not Found!</Router.Default>
+      <Router path="moon">Buttiful</Router>
+      <Router path="rick" collapse={true}>
         <iframe
           width="560"
           height="315"
@@ -59,8 +59,8 @@ function Routing() {
           frameborder="0"
           allowfullscreen
         ></iframe>
-      </Route>
-    </Route>
+      </Router>
+    </Router>
   )
 }
 

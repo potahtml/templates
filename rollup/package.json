@@ -1,7 +1,7 @@
 {
-	"name": "pota-template-js",
+	"name": "pota-template-rollup",
 	"description": "",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
 		"dev": "rollup -c -w",
@@ -16,7 +16,7 @@
 		"rollup": "^4.9.6"
 	},
 	"dependencies": {
-		"pota": "^0.13.118"
+		"pota": "^0.14.133"
 	},
 	"prettier": {
 		"printWidth": 70,
