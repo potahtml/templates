@@ -53,3 +53,5 @@ Feel free to send a pull request with a new template
 - https://github.com/potahtml/pota
 - https://github.com/potahtml/templates
 - https://www.npmjs.com/package/pota
+
+ <img src="https://pota.quack.uy/assets/logo-small.png"/>
