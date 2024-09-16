@@ -6,7 +6,7 @@
 		"moduleResolution": "NodeNext",
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
-		"jsx": "react-jsx",
+		"jsx": "preserve",
 		"jsxImportSource": "pota",
 		"types": ["vite/client", "pota"],
 		"noEmit": true,
