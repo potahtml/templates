@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"strict": true,
+		"checkJs": true,
 		"target": "ESNext",
 		"module": "ESNext",
 		"moduleResolution": "NodeNext",
@@ -8,7 +9,7 @@
 		"esModuleInterop": true,
 		"jsx": "preserve",
 		"jsxImportSource": "pota",
-		"types": ["vite/client", "pota"],
+		"types": ["vite/client", "pota", "./types.ts"],
 		"noEmit": true,
 		"isolatedModules": true
 	}
