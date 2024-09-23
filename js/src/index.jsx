@@ -3,7 +3,6 @@ import { Router } from 'pota/web'
 
 import logo from './assets/logo.svg'
 import styles from './index.module.css'
-import 'pota/plugin/clickOutside'
 
 function App() {
   return (
@@ -13,9 +12,6 @@ function App() {
       </header>
       <p>
         <a
-          clickOutside={(event, node) =>
-            console.log('clickOutside demo', event, node)
-          }
           title="pota comes from potable"
           href="https://pota.quack.uy"
         >

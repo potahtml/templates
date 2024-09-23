@@ -4,9 +4,46 @@ import { Router } from 'pota/web'
 import logo from './assets/logo.svg'
 import styles from './index.module.css'
 
+import type { JSX } from 'pota/jsx-runtime'
+
+declare module 'pota/jsx-runtime' {
+  namespace JSX {
+    /** New attributes to elements */
+
+    // HTML
+    interface IntrinsicHTMLAttributes {
+      alt?: string
+    }
+
+    // SVG
+    interface IntrinsicSVGAttributes {}
+
+    // MathML
+    interface IntrinsicMathMLAttributes {}
+
+    /** Explicit bypass attribute vs property heuristics */
+
+    // `<element prop:myFoo="bar"/>`
+    interface ExplicitProperties {}
+
+    // `<element attr:foo="bar"/>`
+    interface ExplicitAttributes {}
+
+    // `<element bool:foo={true}/>`
+    interface ExplicitBooleans {}
+
+    /** Custom elements */
+
+    interface IntrinsicElements {
+      'my-custom-element': { hello: true | false }
+    }
+  }
+}
+
 function App() {
   return (
     <div class={styles.app}>
+      <my-custom-element hello={true} />
       <header>
         <img src={logo} alt="logo" />
       </header>
