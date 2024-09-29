@@ -16,7 +16,7 @@
 		"vite-plugin-babel": "^1.2.0"
 	},
 	"dependencies": {
-		"pota": "^0.15.143"
+		"pota": "^0.15.144"
 	},
 	"prettier": {
 		"printWidth": 70,
