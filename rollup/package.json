@@ -16,7 +16,7 @@
 		"rollup": "^4.9.6"
 	},
 	"dependencies": {
-		"pota": "^0.14.137"
+		"pota": "^0.15.143"
 	},
 	"prettier": {
 		"printWidth": 70,
