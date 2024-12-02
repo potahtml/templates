@@ -30,6 +30,7 @@
 		"bracketSameLine": false,
 		"arrowParens": "avoid",
 		"proseWrap": "never",
-		"endOfLine": "lf"
+		"endOfLine": "lf",
+		"embeddedLanguageFormatting": "off"
 	}
 }

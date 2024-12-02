@@ -17,6 +17,7 @@ export default [
       {
         format: 'es',
         sourcemap: true,
+        sourcemapExcludeSources: false,
         file: './dist/index.js',
       },
     ],
