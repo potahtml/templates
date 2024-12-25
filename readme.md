@@ -1,43 +1,41 @@
 # pota templates
 
-### Compiler-less
+### Compiler-less HTML
 
 ```bash
-npx degit potahtml/templates/html pota-project
-cd pota-project
+npx degit potahtml/templates/html pota-html-project
+cd pota-html-project
 echo "double click index.html"
 ```
 
-### Rollup
+### Rollup JavaScript (recommended)
 
 ```bash
-npx degit potahtml/templates/rollup pota-project
-cd pota-project
+npx degit potahtml/templates/rollup-js pota-rollup-js-project
+cd pota-rollup-js-project
 npm install --include=dev
 npm run dev
 npm run serve
 ```
 
-### JavaScript
+### Vite JavaScript
 
 for [vite](https://vitejs.dev/)
 
 ```bash
-npx degit potahtml/templates/js pota-project
-cd pota-project
+npx degit potahtml/templates/vite-js pota-vite-js-project
+cd pota-vite-js-project
 npm install --include=dev
 npm run dev
 ```
 
-### TypeScript
+### Vite TypeScript
 
 for [vite](https://vitejs.dev/)
 
-Note: please note this template may need some tweak, contributions welcome!
-
 ```bash
-npx degit potahtml/templates/ts pota-project
-cd pota-project
+npx degit potahtml/templates/vite-ts pota-vite-ts-project
+cd pota-vite-ts-project
 npm install --include=dev
 npm run dev
 ```

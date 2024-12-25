@@ -103,7 +103,7 @@ function Counter() {
   const increment = () => updateCount(count => count + 1)
 
   return (
-    <button onClick={increment}>
+    <button on:click={increment}>
       {count} / {double} /{() => (count() % 2 == 0 ? 'even' : 'odd')}
     </button>
   )
