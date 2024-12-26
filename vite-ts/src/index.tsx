@@ -4,9 +4,9 @@ import { Router } from 'pota/web'
 import logo from './assets/logo.svg'
 import styles from './index.module.css'
 
-import type { JSX } from 'pota/jsx-runtime'
+import type { JSX } from 'pota'
 
-declare module 'pota/jsx-runtime' {
+declare module 'pota' {
   namespace JSX {
     /** New attributes to elements */
 
